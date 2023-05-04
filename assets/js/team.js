@@ -1,0 +1,173 @@
+$(document).ready(function(){
+    $.each(team, function(index, value){
+        const teamMember = value;
+        const html = `<div class="col-lg-3 col-md-3 d-flex align-items-stretch">
+                        <div class="member">
+                            <div class="member-content">
+                                <a href="${teamMember.Link}"><h4>${teamMember.Name}</h4></a>
+                                <span>${teamMember.Designation}</span>
+                                <p>${teamMember.Introduction}</p>                
+                            </div>
+                        </div>
+                    </div>`;
+
+        $("#divTeam").append(html);
+    });    
+});
+
+const team =  [{		
+	"Name":	"Ying Hei Chui",
+	"Designation":	"Professor, University of Alberta",
+	"Introduction":	"Professor and NSERC IRC in Engineered Wood and Building Systems, University of Alberta. He will perform the role of administrator and chief scientific officer of the research program and will also serve as PI of one of the sub-projects (T1-1-F).",
+	"Link":	"https://www.ualberta.ca/engineering/research/groups/timber-systems/chair-profile.html",
+},{		
+	"Name":	"Zhou, Lina",
+	"Designation":	"Assistant Professor, University of Victoria (UVic)",
+	"Introduction":	"Dr. Zhou is an Assistant Professor with expertise in lateral load performance of light wood frame systems. ",
+	"Link":	"https://www.uvic.ca/ecs/civil/people/home/faculty-profiles/zhou-lina.php",
+},{		
+	"Name":	"Mukhopadhyaya, Phalguni",
+	"Designation":	"Professor, University of Victoria (UVic)",
+	"Introduction":	"Dr. Mukhopadhyaya is a Professor and expert in durability and thermal performance of wood building envelope. ",
+	"Link":	"https://www.uvic.ca/ecs/civil/people/home/faculty-profiles/mukhopadhyaya-phalguni.php",
+},{		
+	"Name":	"Yang, Tony",
+	"Designation":	"Professor, University of British Columbia (UBC)",
+	"Introduction":	"Dr. Yang is a Professor and co-leader of Theme 1. He is a renowned expert in seismic performance and performance-based design of structural systems, and a member of the NBCC Standing Committee on Earthquake Design (SCED). ",
+	"Link":	"https://civil.ubc.ca/tony-yang/",
+},{		
+	"Name":	"Lam, Frank",
+	"Designation":	"Professor, University of British Columbia (UBC)",
+	"Introduction":	"Dr. Lam is a Professor and Sr. Chair in Wood Building Design and Construction. Dr. Lam is a member of CSA O86 TC. He is an expert in timber connections, structural performance, and structural reliability of wood systems. ",
+	"Link":	"https://forestry.ubc.ca/faculty-profile/frank-lam/",
+},{		
+	"Name":	"Loss, Cristiano",
+	"Designation":	"Assistant Professor, University of British Columbia (UBC)",
+	"Introduction":	"Dr. Loss recently joined UBC as an Assistant Professor and is Associate Chair in Wood Building Design and Construction. His expertise is in timber connections and lateral performance of mass timber systems. ",
+	"Link":	"https://forestry.ubc.ca/faculty-profile/cristiano-loss/",
+},{		
+	"Name":	"Tu, Qingshi",
+	"Designation":	"Assistant Professor, University of British Columbia (UBC)",
+	"Introduction":	"Dr. Tu is Assistant Professor and a member of UBC's Sustainable Bioeconomy Research Group, as well as an expert in life cycle analysis. ",
+	"Link":	"https://forestry.ubc.ca/faculty-profile/qingshi-tu/",
+},{		
+	"Name":	"Tesfamariam, Solomon",
+	"Designation":	"Professor, University of British Columbia (UBC)",
+	"Introduction":	"Dr. Tesfamariam is Professor and Tier 1 Principal's Research Chair. He is an expert in seismic engineering and wood–steel hybrid systems. ",
+	"Link":	"https://engineering.ok.ubc.ca/about/contact/solomon-tesfamariam/",
+},{		
+	"Name":	"Tannert, Thomas",
+	"Designation":	"Professor, University of Northern British Columbia (UNBC)",
+	"Introduction":	"Dr. Tannert is a Professor, Tier 2 CRC, and BC Leadership Chair in Tall Wood and Hybrid Structures Engineering. He is a timber engineering expert with expertise in connections and timber–concrete systems. Dr. Tannert is a member of CSA O86 TC. ",
+	"Link":	"https://www2.unbc.ca/people/tannert-dr-thomas",
+},{		
+	"Name":	"Zhou, Jianhuij",
+	"Designation":	"Assistant Professor, University of Northern British Columbia (UNBC)",
+	"Introduction":	"Dr. Zhou is an Assistant Professor His expertise is in dynamic and acoustic performance of timber components and systems. He recently established a vibration and acoustics testing lab at UNBC.",
+	"Link":	"https://www2.unbc.ca/people/zhou-dr-jianhui",
+},{		
+	"Name":	"Wimmers, Guido",
+	"Designation":	"Associate Professor, University of Northern British Columbia (UNBC)",
+	"Introduction":	"Dr. Wimmers is an Associate Professor His expertise is in wood building physics and energy performance, and he has played a key role in advancing the Passive House standard in Canada.",
+	"Link":	"https://www2.unbc.ca/people/wimmers-dr-guido",
+},{		
+	"Name":	"Chen, Yuxiang",
+	"Designation":	"Associate Professor, University of Alberta (UAlberta)",
+	"Introduction":	"Dr. Chen is an Associate Professor His expertise is in building physics and renewable energy for buildings. ",
+	"Link":	"https://apps.ualberta.ca/directory/person/ychen5",
+},{		
+	"Name":	"Al-Hussein, Mohamed",
+	"Designation":	"Professor, University of Alberta (UAlberta)",
+	"Introduction":	"Dr. Al-Hussein is a Professor and NSERC Industrial Research Chair in the Industrialization of Building Construction. He is a well-known expert in industrialized construction and factory-based manufacturing of building components and assemblies. ",
+	"Link":	"https://apps.ualberta.ca/directory/person/mohameda",
+},{		
+	"Name":	"Salem, Sam",
+	"Designation":	"Associate Professor, Lakehead University (LakeheadU)",
+	"Introduction":	"Dr. Salem is an Associate Professor and an expert in fire safety engineering, including modelling and fire resistance testing of building members and assemblies. He established a fire testing lab that will be accessed by graduate students in Theme 2. ",
+	"Link":	"https://www.lakeheadu.ca/users/S/osalem",
+},{		
+	"Name":	"Weckman, Beth",
+	"Designation":	"Professor, University of Waterloo (UWaterloo)",
+	"Introduction":	"Dr. Weckman is co-leader of Theme 2. She is a Professor in fire engineering and a member of UWaterloo’s world-renowned Fire Research Facilities. Her expertise is in fire dynamics, fire safety engineering, and risk assessment. ",
+	"Link":	"https://uwaterloo.ca/mechanical-mechatronics-engineering/profile/ejweckma",
+},{		
+	"Name":	"Lacroix, Daniel",
+	"Designation":	"Assistant Professor, University of Waterloo (UWaterloo)",
+	"Introduction":	"Dr. Lacroix is an Assistant Professor with expertise in wood mechanics and blast performance of wood structures. ",
+	"Link":	"https://uwaterloo.ca/civil-environmental-engineering/about/people/daniel-lacroix",
+},{		
+	"Name":	"Doudak, Ghasan",
+	"Designation":	"Professor, University of Ottawa (UOttawa)",
+	"Introduction":	"Dr. Doudak is Professor and is a well-known expert in timber engineering, with expertise in lateral performance and blast performance of timber structural systems. Dr. Doudak is active in codes and standards development and is currently Vice-Chair of the NBCC Standing Committee on Structural Design and CSA O86 TC. ",
+	"Link":	"https://engineering.uottawa.ca/people/doudak-ghasan",
+},{		
+	"Name":	"Erochko, Jeffrey",
+	"Designation":	"Associate Professor, Carleton University (CarletonU)",
+	"Introduction":	"Dr. Erochko is an Associate Professor with expertise in earthquake engineering and steel–timber hybrid connection systems. ",
+	"Link":	"https://carleton.ca/cee/profile/jeffrey-erochko/",
+},{		
+	"Name":	"Hamzeh, Hajiloo",
+	"Designation":	"Assistant Professor, Carleton University (CarletonU)",
+	"Introduction":	"Dr. Hamzeh recently joined CarletonU as an Assistant Professor His expertise is in fire safety engineering and resiliency of steel structures. He will apply these skills in analyzing timber systems as part of the proposed research.",
+	"Link":	"https://carleton.ca/cee/profile/hajiloo-hamzeh/",
+},{		
+	"Name":	"Cruickshank, Cynthia",
+	"Designation":	"Professor, Carleton University (CarletonU)",
+	"Introduction":	"Dr. Cruickshank is a Professor and Dir. of the Centre for Advanced Building Envelope Research (CU-CABER). Her research focuses on the optimization of advanced building energy systems for buildings, including energy-efficient insulation materials, solar-assisted heat pumps, and thermal storage. ",
+	"Link":	"https://carleton.ca/mae/profile/cynthia-cruickshank/",
+},{		
+	"Name":	"Gales, John",
+	"Designation":	"Assistant Professor, York University (YorkU)",
+	"Introduction":	"Dr. Gales is an Assistant Professor in fire engineering. He is a member of the NBCC Standing Committee on Fire Protection. Dr. Gales' primary expertise is in resilient structural fire design, and human behaviour in emergency situations. ",
+	"Link":	"https://lassonde.yorku.ca/users/jgales",
+},{		
+	"Name":	"Ge, Hua",
+	"Designation":	"Associate Professor, Concordia University (ConcordiaU)",
+	"Introduction":	"Dr. Ge is co-leader for Theme 3. She is an Associate Professor and Concordia University Research Chair in High Performance Building Envelope for Climate Resilient Buildings. Her research focuses on high-performance and durable building envelopes and building envelope design for future climates.",
+	"Link":	"https://explore.concordia.ca/index.php/hua-ge",
+},{		
+	"Name":	"Wang, Liangzhu",
+	"Designation":	"Associate Professor, Concordia University (ConcordiaU)",
+	"Introduction":	"Dr. Wang is an Associate Professor and University Research Chair in Building Airflow and Thermal Management. His areas of expertise include building airflow, thermal management, and CFD applied to building envelope design. ",
+	"Link":	"https://www.concordia.ca/research/zero-energy-building/faculty.html?fpid=liangzhu-wang",
+},{		
+	"Name":	"Ménard, Sylvain",
+	"Designation":	"Professor, Université du Québec à Chicoutimi (UQaC)",
+	"Introduction":	"Dr. Ménard is a Professor in timber structures. His primary research expertise is in the vibration and acoustic performance of wood systems and engineered wood products. ",
+	"Link":	"http://www.uqac.ca/portfolio/sylvainmenard/",
+},{		
+	"Name":	"Blanchet, Pierre",
+	"Designation":	"Professor, Université Laval (ULaval)",
+	"Introduction":	"Dr. Blanchet is co-leader for Theme 4. He is a Professor and NSERC IRC in Eco-Responsible Wood Construction. His expertise is in eco-design of buildings, wood construction, and sustainability of materials and buildings. ",
+	"Link":	"https://www.sbf.ulaval.ca/professeurs/pierre-blanchet",
+},{		
+	"Name":	"Salenikovich, Alex",
+	"Designation":	"Professor, Université Laval (ULaval)",
+	"Introduction":	"Dr. Salenikovich is Professor in timber engineering. He is a well-known expert in timber connection and structural performance of timber systems, and a member of CSA O86 TC. ",
+	"Link":	"https://www.sbf.ulaval.ca/professeurs/alexander-salenikovich",
+},{		
+	"Name":	"Gosselin, Louis",
+	"Designation":	"Professor, Université Laval (ULaval)",
+	"Introduction":	"Dr. Gosselin is a Professor with specialization in HVAC and envelope performance, as well as renewable energy in buildings. ",
+	"Link":	"https://www.fsg.ulaval.ca/departements/professeurs/louis-gosselin-335",
+},{		
+	"Name":	"Lehoux, Nadia",
+	"Designation":	"Professor, Université Laval (ULaval)",
+	"Introduction":	"Dr. Lehoux is a Professor and Assistant Dir. of the Centre Interuniversitaire de Recherche sur es Réseaux d’Entreprise, la Logistique et le Transport. Her expertise is in supply chain planning and coordination and business modelling and optimization. ",
+	"Link":	"https://iid.ulaval.ca/equipes/nadia-lehoux/",
+},{		
+	"Name":	"Thiffault, Évelyne",
+	"Designation":	"Assistant Professor, Université Laval (ULaval)",
+	"Introduction":	"Dr. Thiffault is an Assistant Professor and Scientific Dir. of Forêt Montmorency. One of her research focus areas is in renewable materials. ",
+	"Link":	"https://www.sbf.ulaval.ca/professeurs/evelyne-thiffault",
+},{		
+	"Name":	"Dagenais, Christian",
+	"Designation":	"Adjunct Professor, Université Laval (ULaval)",
+	"Introduction":	"Dr. Dagenais is an Adjunct Professor at ULaval and Proj. Leader at FPInnovations. He is one of Canada's leading experts in structural performance of wood structural members during fire, and an active member of CSA O86 TC and ISO TC 92 Fire Safety.",
+	"Link":	"https://www.ulaval.ca/la-recherche/repertoire-corps-professoral/christian-dagenais",
+},{		
+	"Name":	"Amor, Ben",
+	"Designation":	"Associate Professor, Université de Sherbrooke (USherbrooke)",
+	"Introduction":	"Dr. Amor is co-leader of Theme 4. He is an Associate Professor and Dir. of the Interdisciplinary Research Laboratory in Sustainable Engineering and Eco-Design. His expertise is in circular Economy, LCA, and eco-design. ",
+	"Link":	"https://www.usherbrooke.ca/research/specialists/details/ben.amor",
+}];
